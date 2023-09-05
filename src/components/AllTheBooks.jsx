@@ -8,11 +8,11 @@ import { Component } from "react";
 class AllTheBooks extends Component {
    render(){
     return (
-        <Container>
-            <Row className='row-cols-4 gy-3'>
+        <Container fluid>
+            <Row className='row-cols-2 row-cols-md-3 row-cols-md-4 gy-3'>
                 {fantasy.map((book, index) => (
                     <Col>
-                        <Book src={book.img} price={book.price} key={index} />
+                        <Book src={book.img} title={book.title} key={index} />
                     </Col>
                 ))}
             </Row>
