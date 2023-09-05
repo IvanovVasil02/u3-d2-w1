@@ -9,10 +9,10 @@ class AllTheBooks extends Component {
    render(){
     return (
         <Container>
-            <Row>
+            <Row className='row-cols-4 gy-3'>
                 {fantasy.map((book, index) => (
                     <Col>
-                        <Book src={book.img} price={book.price} key={index}/>
+                        <Book src={book.img} price={book.price} key={index} />
                     </Col>
                 ))}
             </Row>
