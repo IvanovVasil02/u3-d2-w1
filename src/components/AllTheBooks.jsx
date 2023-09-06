@@ -6,10 +6,15 @@ import Book from './Book';
 import { Component } from "react";
 
 class AllTheBooks extends Component {
+
+    state() {
+
+    }
+
    render(){
     
     return (
-        <Container fluid>
+        <Container>
             <Row className='row-cols-2 row-cols-md-3 row-cols-md-4 gy-3'>
                 {fantasy.map((book, index) => (
                     <Col key={`book-${index}`}>
